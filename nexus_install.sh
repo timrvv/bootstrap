@@ -2,10 +2,10 @@
 
 DEBIAN_FRONTEND=noninteractive
 
-sudo add-apt-repository ppa:webupd8team/java
+sudo add-apt-repository -y ppa:webupd8team/java
 sudo apt-get update
 sudo echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
-sudo install -yq oracle-java8-installer shared/accepted-oracle-license-v1-1
+sudo apt-get install -yq oracle-java8-installer shared/accepted-oracle-license-v1-1
 sudo apt-get install -yq oracle-java8-set-default
 
 #wget http://download.sonatype.com/nexus/3/nexus-3.1.0-04-unix.tar.gz
